@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Register</title>
+	<script>
+	
+	
+	function validation(){ 
+	var a = document.form.name.value;
+	var b = document.form.password.value;
+	var c = document.form.confirmPass.value;
+	var d = document.form.mobile.value;
+	var count=0;
+	if(a==""){ 
+	alert("Please Enter  Name"); 
+	count++; 
+	}
+	else if(isNaN(d)){ 
+	alert("Please Enter Mobile Number"); 
+	count++;
+	}
+	else if(b==""){ 
+	alert("Please Enter  Password"); 
+	count++;
+	}
+	else if(b!=c){ 
+	alert("Passwords Do Not Match"); 
+	count++;
+	}
+	else{
+	count=0;
+	}
+	if(count==0){
+		document.write("<h2>"+"Registration Confirmation Message"+"</h2>"+"</br>");
+		document.write("<p style='color:red;font-weight:bold'>"+"Your account has been registered successfully.We will contact you soon for further process!!!"+"</p>");
+	}
+	}
+	
+	
+	</script>
+
+</head>
+
+<body>
+	<h2>User Registration Page</h2>
+	<form name="form" onsubmit= "validation()" onkeydown="enter" onsubmit= "confirm()" >
+	<b>Name:</b></br>
+	<input type="text" name="name" placeholder="Enter Full Name"/></br>
+	<b>Email:</b></br>
+	<input type="text" name="email" placeholder="xxxxxx@gmail.com" /></br>
+	<b>Mobile:</b></br>
+	<input type="text" name="mobile" placeholder="017xxxxxxxx"/></br>
+	<b>User Name:</b></br>
+	<input type="text" name="userName" placeholder="Ex:Georgevjr03"/></br>
+	<b>Password:</b></br>
+	<input type="password" name="password" placeholder="Enter Password"/></br>
+	<b>Confirm Password:</b></br>
+	<input type="password" name="confirmPass" placeholder="Confirm Password "/></br>
+	<input type="submit" name="submit" value="submit" />
+	<hr></hr>
+	</form>
+</body>
+</html>

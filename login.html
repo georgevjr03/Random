@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Login</title>
+	<script>
+		function confirm(){
+		document.write("<h2>"+"Login Confirmation Message"+"</h2>"+"</br>");
+		document.write("<p style='color:red;'>"+"You Have Login Successfully!!!"+"</p>");
+		}
+	</script>
+
+</head>
+
+<body>
+	<h2>Login to Account</h2></br>
+	<b>User Name:</b></br>
+	<input type="text" name="userName" placeholder="Ex:Georgevjr03"/></br>
+	<b>Password:</b></br>
+	<input type="password" name="password" /></br>
+	<form name="form1" onsubmit="confirm()">
+	<input type="submit" name="submit" value="submit" />
+	
+	<a href="register.html">
+	<input type="button" name="newUser" value="Register New User" />
+	</a>
+	</form>
+	Forgot Password?<a href="forgotPass.html">Click Here</a>
+</body>
+</html>
